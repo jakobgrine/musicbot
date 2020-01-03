@@ -95,7 +95,8 @@ class Music(commands.Cog):
                 t, ctx, self.queue(ctx).volume), info['entries'])
         else:
             track = Track(info, ctx, self.queue(ctx).volume)
-        await ctx.channel.delete_messages([ctx.message, msg])
+        if ctx.bot.config.get('delete_messages'):
+            await ctx.channel.delete_messages([ctx.message, msg])
         if not ctx.voice_client.is_playing():
             await self.queue(ctx).play(track)
         else:
