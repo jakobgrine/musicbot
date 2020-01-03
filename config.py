@@ -4,7 +4,11 @@ import os
 
 config_file = os.path.join(os.path.dirname(__file__), 'config.json')
 default_config = {
-    'active_extensions': [],
+    'active_extensions': [
+        'ext.admin',
+        'ext.events',
+        'ext.music'
+    ],
     'command_prefix': '',
     'delete_messages': True,
     'discord_token': ''
