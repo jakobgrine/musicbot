@@ -1,5 +1,5 @@
 ## Description
-This bot replaces messages of a specific person with a random insult.
+This is just a simple music bot.
 
 ## Installation
 1. Clone this repository: `git clone https://github.com/jakobgrine/musicbot.git`
