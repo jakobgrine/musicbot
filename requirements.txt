@@ -1,0 +1,9 @@
+discord.py[voice]
+pillow
+numpy
+scipy
+requests
+speedtest-cli
+psutil
+asyncio
+youtube_dl
