@@ -35,7 +35,10 @@ class Queue(deque):
         ctx.voice_client.play(
             player, after=lambda: ctx.bot.loop.run_until_complete(self.after()))
 
-        embed = discord.Embed(title=':cd: Now Playing', description=f'[{player.title}]({player.webpage_url}) by [{player.uploader}]({player.uploader_url})', color=discord.Color.from_rgb(180, 192, 200)) \
+        embed = discord.Embed(
+            title='Now Playing',
+            description=f'[{player.title}]({player.webpage_url}) by [{player.uploader}]({player.uploader_url})',
+            color=discord.Color.from_rgb(180, 192, 200)) \
             .set_thumbnail(url=player.thumbnail) \
             .add_field(name='Duration', value=player.duration) \
             .set_footer(text=f'Requested by {player.requester.display_name}', icon_url=player.requester.avatar_url)
