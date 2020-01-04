@@ -1,3 +1,7 @@
+<a href="https://discordapp.com/">
+  <img align="right" width="200" src="https://discordapp.com/assets/2c21aeda16de354ba5334551a883b481.png" alt="Discord">
+<a/>
+
 ## Description
 This is just a simple music bot.
 
